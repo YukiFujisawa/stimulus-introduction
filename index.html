@@ -8,21 +8,13 @@
     <script src="src/application.js" type="module"></script>
   </head>
   <body class="bg-gray-100 flex items-center justify-center min-h-screen">
-    <div
-      class="max-w-md mx-auto bg-white p-6 rounded-lg shadow-md"
-      data-controller="hello"
-    >
-      <h1
-        class="text-2xl font-bold mb-4 text-center"
-        data-hello-target="output"
-      >
-        <!-- ここに出力されるテキスト -->
-      </h1>
+    <div class="bg-white p-6 rounded shadow-md" data-controller="hello">
+      <p class="font-bold mb-4 text-center" data-hello-target="output"></p>
       <button
-        class="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition duration-300"
+        class="bg-blue-500 text-white py-2 px-4 rounded"
         data-action="click->hello#greet"
       >
-        Say Hello
+        クリックしてください
       </button>
     </div>
   </body>
