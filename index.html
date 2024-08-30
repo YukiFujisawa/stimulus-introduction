@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stimulus入門 - 初学者のための実践ガイド</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="src/application.js" type="module"></script>
   </head>
   <body class="bg-gray-100 p-8">
     <div class="container mx-auto">
-      <h1 class="text-3xl font-bold mb-8">
+      <h1
+        id="stimulus入門-初学者のための実践ガイド"
+        class="text-3xl font-bold mb-8"
+      >
         Stimulus入門 初学者のための実践ガイド
       </h1>
+
       <div
         class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
         data-controller="card"
       >
-        <!-- カードのテンプレート -->
         <template data-card-target="template">
           <div class="bg-white rounded-lg shadow-md overflow-hidden">
             <img
@@ -34,7 +40,7 @@
                   data-card-target="category"
                 ></span>
                 <a
-                  href="#"
+                  href=""
                   class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
                   data-card-target="demo"
                   >デモ</a

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stimulus Hello World</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../application.js" type="module"></script>
+  </head>
+  <body
+    class="bg-gray-100 flex items-center justify-center min-h-screen"
+    data-controller="card"
+  >
+    <div class="bg-white p-6 rounded shadow-md" data-controller="hello">
+      <p class="font-bold mb-4 text-center" data-hello-target="output"></p>
+      <button
+        class="bg-blue-500 text-white py-2 px-4 rounded"
+        data-action="click->hello#greet"
+      >
+        クリックしてください
+      </button>
+    </div>
+  </body>
+</html>
