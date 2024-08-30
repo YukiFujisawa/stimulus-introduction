@@ -27,13 +27,26 @@ export default class extends Controller {
   loadCards() {
     const cards = [
       {
-        image: "assets/img1.png",
-        title: "Hello World",
-        description: "Stimulusの基本的な使い方を学ぶシンプルなデモ",
-        category: "Stimulus 基礎",
+        image: "assets/hello.png",
+        title: "Hello World 1",
+        description: "Stimulusの基本的な使い方を学ぶシンプルなデモ1",
+        category: "Stimulus 基礎1",
         demoLink: "src/view/hello.html",
       },
-      // 他のカードデータ...
+      {
+        image: "assets/hello.png",
+        title: "Hello World 2",
+        description: "Stimulusの基本的な使い方を学ぶシンプルなデモ2",
+        category: "Stimulus 基礎2",
+        demoLink: "src/view/hello.html",
+      },
+      {
+        image: "assets/hello.png",
+        title: "Hello World 3",
+        description: "Stimulusの基本的な使い方を学ぶシンプルなデモ3",
+        category: "Stimulus 基礎3",
+        demoLink: "src/view/hello.html",
+      },
     ];
 
     cards.forEach((card) => this.createCard(card));
@@ -56,7 +69,7 @@ export default class extends Controller {
   addBackButton() {
     if (!this.isIndexPage()) {
       const backButton = document.createElement("a");
-      backButton.href = "/";
+      backButton.href = "/index.html";
       backButton.className =
         "fixed top-4 left-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition flex items-center";
       backButton.innerHTML = `
