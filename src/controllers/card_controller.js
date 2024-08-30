@@ -69,7 +69,7 @@ export default class extends Controller {
   addBackButton() {
     if (!this.isIndexPage()) {
       const backButton = document.createElement("a");
-      backButton.href = "/index.html";
+      backButton.href = "../../index.html";
       backButton.className =
         "fixed top-4 left-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition flex items-center";
       backButton.innerHTML = `
