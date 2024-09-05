@@ -13,7 +13,7 @@ export default class extends Controller {
     const leftLeg = this.element.querySelector("#left-leg");
     const rightLeg = this.element.querySelector("#right-leg");
 
-    const bpm = 120;
+    const bpm = 110;
     const beatDuration = 60000 / bpm;
 
     const easeOutBack = (t) => {
